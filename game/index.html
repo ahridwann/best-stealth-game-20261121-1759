@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gilded Shadows — a museum stealth game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #07080d; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  #wrap { width: 1280px; max-width: 100vw; }
+  canvas { display: block; width: 100%; height: auto; background: #0b0d16; cursor: pointer; }
+  #hint { color: #8b93a7; font: 13px/1.5 system-ui, sans-serif; text-align: center; padding: 8px 0 0; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="hint">WASD / arrows to move &middot; hold Shift to sneak &middot; P pauses &middot; R restarts &middot; sound on for footsteps</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
